@@ -30,26 +30,26 @@ header {
 .nav-link {
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 .active { /* Sitio activo */
-    text-decoration: 4px underline #4B4B4B;
+    text-decoration: 0.25rem underline #030A8C;
 }
 
 #nombreSitio {
     font-family: 'Oswald';
     color: black;
-    font-size: 32px;
-    line-height: 29px;
+    font-size: 2rem;
+    line-height: 1.813rem;
 }
 
 #nombreUsuario {
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 /* Sección Saldo */
@@ -62,8 +62,8 @@ header {
 #textoPuntos {
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 #containerSaldo {
@@ -76,15 +76,15 @@ header {
 #tituSaldoDisp {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 2.5rem;
+    line-height: 2.813rem;
 }
 
 .saldo {
     font-family: 'Quicksand';
     color: white;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 .btn {
@@ -93,9 +93,8 @@ header {
     background-color: #9BF2EA;
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
-    /* Pendiente, tambien considera el menu */
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 .btn:hover {
@@ -108,15 +107,15 @@ header {
 #tituModal {
     font-family: 'Roboto Mono';
     color: black;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 2.5rem;
+    line-height: 2.813rem;
 }
 
 .textoModal, .form-control::placeholder, .form-control:focus, .form-select, .form-select::placeholder {
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 /* Sección Operaciones */
@@ -133,8 +132,8 @@ header {
 
     font-family: 'Quicksand';
     color: black;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
 
@@ -145,46 +144,34 @@ footer {
     min-height: 197px;
 }
 
-#logoFooter{
-    margin-left: 75px;
-}
-
 #tituloFooter {
     font-family: 'Roboto Mono';
     color: white;
-    font-size: 40px;
-    line-height: 45px;
-}
-
-#infoSeguinos {
-    margin-top: 15px;
+    font-size: 2.5rem;
+    line-height: 2.813rem;
 }
 
 #textoFooter {
     font-family: 'Quicksand';
     color: white;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
 }
 
-.redesSociales {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#botonAyuda {
+.botonAyuda {
     font-family: 'Quicksand';
     color: #5DABFF;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     height: 63px;
     width: 160px;
     background-color: white;
     border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+}
+
+.botonAyuda:hover {
+    color: white;
+    background-color: #030A8C;
 }
 
 
@@ -196,7 +183,7 @@ footer {
         font-family: 'Quicksand';
         color: black;
         font-size: 1.25rem; /* 20px */
-        line-height: 30px;
+        line-height: 1.875rem;
     }
 
     .active { /* Sitio activo */
@@ -205,7 +192,7 @@ footer {
 
     #nombreSitio {
         font-size: 1.75rem;
-        line-height: 29px;
+        line-height: 1.813rem;
     }
 
     .navbar-toggler {
@@ -221,7 +208,7 @@ footer {
       
       .custom-toggler.navbar-toggler {
         border-color: white;
-        border-width: 2px;
+        border-width: 0.125rem;
       } 
 
     #iconoIniciarSesion, #iconoCrearCuenta {
@@ -254,8 +241,8 @@ footer {
     #textoPuntos {
         font-family: 'Quicksand';
         color: black;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
     }
 
     #containerSaldo {
@@ -266,20 +253,19 @@ footer {
     }
 
     #tituSaldoDisp {
-        font-size: 28px;
-        line-height: 20px;
+        font-size: 1.75rem;
+        line-height: 1.25rem;
     }
 
     .saldo {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
     }
 
     .btn {
         width: 140px;
-        font-size: 20px;
-        line-height: 30px;
-        /* Pendiente, tambien considera el menu */
+        font-size: 1.25rem;
+        line-height: 1.875rem;
     }
 
     .btn:hover {
@@ -316,41 +302,29 @@ footer {
         min-height: 197px;
     }
 
-    #logoFooter{
-        margin-left: 25px;
-    }
-
     #tituloFooter {
         font-size: 1.5rem;
-        line-height: 30px;
-    }
-
-    #infoSeguinos {
-        margin-top: 15px;
+        line-height: 1.875rem;
     }
 
     #textoFooter {
         font-size: 1.125rem;
-        line-height: 25px;
-    }
-
-    .redesSociales {
-        display: flex;
-        justify-content: center;
+        line-height: 1.563rem;
     }
 
     #iconoRed {
         height: 35px;
         width: 35px;
-        margin-left: 15px;
     }
 
-    #botonAyuda {
+    .botonAyuda {
         font-size: 1.25rem;
-        line-height: 30px;
-        height: 55px;
-        width: 125px;
+        line-height: 1.875rem;
         border-radius: 10px;
+    }
+
+    #infoContacto {
+        text-align: center;
     }
 }
 

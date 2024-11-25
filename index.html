@@ -10,7 +10,7 @@
     <body>
         <!--Header-->
         <header>
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-md" id="navbarHeader">
                 <div class="container-fluid">
                     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -24,19 +24,19 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Operaciones</a>
+                                <a class="nav-link" href="operaciones.html">Operaciones</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Beneficios</a>
+                                <a class="nav-link" href="beneficios.html">Beneficios</a>
                             </li>
                             <li>
-                                <a class="nav-link d-md-none">Iniciar Sesi&oacute;n</a>
+                                <a class="nav-link d-md-none" href="iniciarSesion.html">Iniciar Sesi&oacute;n</a>
                             </li>
                             <li>
                                 <a class="nav-link d-md-none" href="crearCuenta.html">Crear Cuenta</a>
                             </li>
                         </ul>
-                        <a class="col-1" href="" id="iconoIniciarSesion"><img src="img/iconos/IconoIniciarSesion.png" alt="Icono de Iniciar Sesion" height="60px" width="60px"></a>
+                        <a class="col-1" href="iniciarSesion.html" id="iconoIniciarSesion"><img src="img/iconos/IconoIniciarSesion.png" alt="Icono de Iniciar Sesion" height="60px" width="60px"></a>
                         <a class="col-1 offset-1" href="crearCuenta.html" id="iconoCrearCuenta"><img src="img/iconos/IconoCrearCuenta.png" alt="Icono de Crear Cuenta" height="60px" width="60px"></a>
                     </div>
                 </div>
@@ -65,50 +65,48 @@
                                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" id="tituloPorQueElegirnos">¿Por qu&eacute; elegirnos?</div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-sm-9 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center" id="textoPorQueElegirnos">En MONEDA X, ofrecemos una soluci&oacute;n financiera que combina seguridad, simplicidad y eficiencia. Nuestra plataforma no solo permite gestionar tu dinero de manera r&aacute;pida, sino que tambi&eacute;n facilita pagos, transferencias y opciones de inversi&oacute;n en un solo lugar. Adem&aacute;s, recompensamos cada transacci&oacute;n con puntos que puedes usar m&aacute;s adelante. Moneda X es la mejor opci&oacute;n para quienes buscan control y beneficios en su experiencia financiera.</div>
+                                <div class="col-sm-9 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center" id="textoPorQueElegirnos">
+                                    En MONEDA X, ofrecemos una soluci&oacute;n financiera que combina seguridad, simplicidad y eficiencia. Nuestra plataforma no solo permite gestionar tu dinero de manera r&aacute;pida, sino que tambi&eacute;n facilita pagos, transferencias y opciones de inversi&oacute;n en un solo lugar. Adem&aacute;s, recompensamos cada transacci&oacute;n con puntos que puedes usar m&aacute;s adelante. Moneda X es la mejor opci&oacute;n para quienes buscan control y beneficios en su experiencia financiera.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid align-items-center" id="containerOperaciones"> <!--Container operaciones-->
+            <div class="container-fluid" id="containerOperaciones"> <!--Container operaciones-->
                 <div class="row justify-content-center align-items-center mb-5">
-                    <div class="col-6 text-center mt-5" id="tituloOperaciones">Operaciones</div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-5" id="tituloOperaciones">Operaciones</div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="container-fluid" id="containerModalesOperaciones">
-                            <div class="row justify-content-around align-items-center"> <!--Revisar-->
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 col-xxl-2 mb-5">
-                                    <div id="tarjetaOperacion">
-                                        <div id="tituloOperacion">Depositar</div>
-                                        <img src="img/iconos/IconoDepositar.png" id="iconoOp" alt="Icono de operacion Depositar" height="150px" width="150px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 col-xxl-2 mb-5">
-                                    <div id="tarjetaOperacion">
-                                        <div id="tituloOperacion">Transferir</div>
-                                        <img src="img/iconos/IconoTransferir.png" id="iconoOp" alt="Icono de operacion Transferir" height="150px" width="150px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 col-xxl-2 mb-5">
-                                    <div id="tarjetaOperacion">
-                                        <div id="tituloOperacion">Cargar Transporte</div>
-                                        <img src="img/iconos/IconoCargarTransporte.png" id="iconoOp" alt="Icono de operacion Cargar Transporte" height="150px" width="150px">
-                                    </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 col-xxl-2 mb-5">
-                                    <div id="tarjetaOperacion">
-                                        <div id="tituloOperacion">Pagar Servicios</div>
-                                        <img src="img/iconos/IconoPagarServicios.png" id="iconoOp" alt="Icono de operacion Pagar Servicios" height="150px" width="150px">
-                                    </div>
-                                </div>
-                            </div>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5">
+                        <div id="tarjetaOperacion">
+                            <div id="tituloOperacion">Depositar</div>
+                            <img src="img/iconos/IconoDepositar.png" id="iconoOp" alt="Icono de operacion Depositar" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5">
+                        <div id="tarjetaOperacion">
+                            <div id="tituloOperacion">Transferir</div>
+                            <img src="img/iconos/IconoTransferir.png" id="iconoOp" alt="Icono de operacion Transferir" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5">
+                        <div id="tarjetaOperacion">
+                            <div id="tituloOperacion">Cargar Transporte</div>
+                            <img src="img/iconos/IconoCargarTransporte.png" id="iconoOp" alt="Icono de operacion Cargar Transporte" height="150px" width="150px">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 mb-5">
+                        <div id="tarjetaOperacion">
+                            <div id="tituloOperacion">Pagar Servicios</div>
+                            <img src="img/iconos/IconoPagarServicios.png" id="iconoOp" alt="Icono de operacion Pagar Servicios" height="150px" width="150px">
                         </div>
                     </div>
                 </div>
+                       
+                
                 <div class="row justify-content-center mt-3">
-                    <div class="col-sm-6 col-6 text-center">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center">
                         <button type="button" class="btn mb-5" id="botonVerMas">Ver m&aacute;s</button>
                     </div>
                 </div>
@@ -178,45 +176,55 @@
         <!--Footer-->
         <footer>
             <div class="container-fluid" id="containerInternoFooter">
-                <div class="position-relative">
-                    <div class="row g-0 justify-content-center align-items-center p-2">
-                        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 position-absolute top-0 start-0 mt-3"><img id="logoFooter" src="img/LogoXFooter.png" alt="Logo Moneda X de Footer" height="60px" width="60px"></div>
-                        <div class="col-sm-11 col-md-2 col-lg-2 offset-lg-3 col-xl-2 col-xxl-2 text-center">
-                            <div class="container-fluid" id="infoContacto"> <!--Info Contacto-->
-                                <div class="row mt-1 mb-3 align-items-center">
-                                    <div class="col-sm-12" id="tituloFooter">CONTACTO</div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-12" id="textoFooter">0800-971-0101</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
-                            <div class="container-fluid" id="infoSeguinos"> <!--Info Seguinos, redes sociales-->
-                                <div class="row mb-3 align-items-center">
-                                    <div class="col text-center" id="tituloFooter">SEGUINOS</div>
-                                </div>
-                                <div class="row g-0">
-                                    <div class="col">
-                                         <div class="redesSociales">
-                                            <img id="iconoRed" src="img/iconos/iconoFacebook.png" alt="icono de Facebook" height="47px" width="47px">
-                                            <img id="iconoRed" src="img/iconos/iconoInstagram.png" alt="icono de Instagram" height="47px" width="47px">
-                                            <img id="iconoRed" src="img/iconos/iconoXTwitter.png" alt="icono de X - Twitter" height="47px" width="47px">
-                                            <img id="iconoRed" src="img/iconos/iconoYoutube.png" alt="icono de Youtube" height="47px" width="47px">
-                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1 col-xl-4 col-xxl-4 mt-3 text-center"> <!--Boton ayuda-->
-                            <div id="botonAyuda">
-                                <img src="img/iconos/iconoAyuda.png" alt="icono signo de Pregunta para Ayuda" height="40px" width="40px">
-                                Ayuda    
-                            </div>
-                        </div> 
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 mt-3">
+                        <a href="#navbarHeader"><img id="logoFooter" src="img/LogoXFooter.png" alt="Logo Moneda X de Footer" height="60px" width="60px"></a>
                     </div>
+                    <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 col-xxl-3 offset-sm-1 offset-md-1">
+                        <div class="container-fluid" id="infoContacto"> <!--Info Contacto-->
+                            <div class="row mb-3">
+                                <div class="col-sm-11 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="tituloFooter">CONTACTO</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-11 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="textoFooter">0800-971-0101</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 col-xxl-3 mt-2">
+                        <div class="container-fluid" id="infoSeguinos"> <!--Info Seguinos, redes sociales-->
+                            <div class="row mb-3">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center" id="tituloFooter">SEGUINOS</div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <div class="container-fluid" id="redesSociales">
+                                        <div class="row justify-content-center">
+                                            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+                                                <a href=""><img id="iconoRed" src="img/iconos/iconoFacebook.png" alt="icono de Facebook" height="47px" width="47px"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+                                                <a href=""><img id="iconoRed" src="img/iconos/iconoInstagram.png" alt="icono de Instagram" height="47px" width="47px"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+                                                <a href=""><img id="iconoRed" src="img/iconos/iconoXTwitter.png" alt="icono de X - Twitter" height="47px" width="47px"></a>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 text-center">
+                                                <a href=""><img id="iconoRed" src="img/iconos/iconoYoutube.png" alt="icono de Youtube" height="47px" width="47px"></a>  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-1 col-xl-1 col-xxl-1 offset-md-1 offset-lg-1 mt-3 text-center"> <!--Boton ayuda-->
+                        <button type="button" class="btn botonAyuda" role="link" onclick="window.location='ayuda.html'">
+                            <img src="img/iconos/iconoAyuda.png" alt="icono signo de Pregunta para Ayuda" height="40px" width="40px">
+                            Ayuda  
+                        </button>
+                    </div> 
                     <div class="row mt-4 justify-content-center align-items-center">
-                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-3 text-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-3 text-center">
                             <div class="copyRight" id="textoFooter">
                                 <img src="img/iconos/iconoCopyright.png" alt="icono de Copyright" height="30px" width="30px">
                                 2024 Moneda X. Todos los derechos reservados.
@@ -224,7 +232,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
         </footer>
               
