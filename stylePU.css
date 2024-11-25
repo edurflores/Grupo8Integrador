@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(fuentes/Oswald/Oswald-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(fuentes/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(fuentes/Quicksand/Quicksand-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Header */
+
+header {
+    height: 102px;
+    background-color: #9BF2EA;
+}
+
+.nav-link {
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.active { /* Sitio activo */
+    text-decoration: 4px underline #4B4B4B;
+}
+
+#nombreSitio {
+    font-family: 'Oswald';
+    color: black;
+    font-size: 32px;
+    line-height: 29px;
+}
+
+#nombreUsuario {
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Sección Saldo */
+
+#seccionSaldo {
+    min-height: 478px;
+    background-color: #8979F2;
+}
+
+#textoPuntos {
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+#containerSaldo {
+    min-height: 337px;
+    max-width: 640px;
+    background-color: #030A8C;
+    border-radius: 10px;
+}
+
+#tituSaldoDisp {
+    font-family: 'Roboto Mono';
+    color: white;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.saldo {
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.btn {
+    height: 40px;
+    width: 170px;
+    background-color: #9BF2EA;
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+    /* Pendiente, tambien considera el menu */
+}
+
+.btn:hover {
+    background-color: #0B0447;
+    color: white;
+}
+
+/* Modales */
+
+#tituModal {
+    font-family: 'Roboto Mono';
+    color: black;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.textoModal, .form-control::placeholder, .form-control:focus, .form-select, .form-select::placeholder {
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* Sección Operaciones */
+
+#seccionOperaciones {
+    min-height: 500px;
+}
+
+.operacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+/* Footer */ 
+
+footer {
+    background-color: #5DABFF;
+    min-height: 197px;
+}
+
+#logoFooter{
+    margin-left: 75px;
+}
+
+#tituloFooter {
+    font-family: 'Roboto Mono';
+    color: white;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+#infoSeguinos {
+    margin-top: 15px;
+}
+
+#textoFooter {
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#botonAyuda {
+    font-family: 'Quicksand';
+    color: #5DABFF;
+    font-size: 24px;
+    line-height: 30px;
+    height: 63px;
+    width: 160px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media (max-width: 767.98px) {
+
+    /* Header */
+
+    .nav-link {
+        font-family: 'Quicksand';
+        color: black;
+        font-size: 1.25rem; /* 20px */
+        line-height: 30px;
+    }
+
+    .active { /* Sitio activo */
+        text-decoration: 4px underline #4B4B4B;
+    }
+
+    #nombreSitio {
+        font-size: 1.75rem;
+        line-height: 29px;
+    }
+
+    .navbar-toggler {
+        margin-top: 20px;
+        margin-left: 50px;
+        background-color: #030A8C;
+        color: #8979F2;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+      
+      .custom-toggler.navbar-toggler {
+        border-color: white;
+        border-width: 2px;
+      } 
+
+    #iconoIniciarSesion, #iconoCrearCuenta {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background-color: #9BF2EA;
+    }
+
+    #botonVerMas {
+        height: 40px;
+        width: 100px;
+        background-color: #9BF2EA;
+        
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: center;
+        border-radius: 30px;
+    
+    }
+
+    /* Sección Saldo */
+
+    #seccionSaldo {
+        min-height: 478px;
+        background-color: #8979F2;
+    }
+
+    #textoPuntos {
+        font-family: 'Quicksand';
+        color: black;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #containerSaldo {
+        min-height: 300px;
+        min-width: 500px;
+        background-color: #030A8C;
+        border-radius: 10px;
+    }
+
+    #tituSaldoDisp {
+        font-size: 28px;
+        line-height: 20px;
+    }
+
+    .saldo {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .btn {
+        width: 140px;
+        font-size: 20px;
+        line-height: 30px;
+        /* Pendiente, tambien considera el menu */
+    }
+
+    .btn:hover {
+        background-color: #0B0447;
+        color: white;
+    }
+
+    /* Modales */
+
+    #tituModal {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+    }
+    
+    .textoModal, .form-control::placeholder, .form-control:focus, .form-select, .form-select::placeholder {
+        font-size: 1.125rem;
+        line-height: 1.875rem;
+    }
+
+    /* Sección Operaciones */
+    .operacion {
+        font-size: 1.25rem;
+    }
+
+    #iconoOperacion {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* Footer */ 
+
+    footer {
+        background-color: #5DABFF;
+        min-height: 197px;
+    }
+
+    #logoFooter{
+        margin-left: 25px;
+    }
+
+    #tituloFooter {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    #infoSeguinos {
+        margin-top: 15px;
+    }
+
+    #textoFooter {
+        font-size: 1.125rem;
+        line-height: 25px;
+    }
+
+    .redesSociales {
+        display: flex;
+        justify-content: center;
+    }
+
+    #iconoRed {
+        height: 35px;
+        width: 35px;
+        margin-left: 15px;
+    }
+
+    #botonAyuda {
+        font-size: 1.25rem;
+        line-height: 30px;
+        height: 55px;
+        width: 125px;
+        border-radius: 10px;
+    }
+}
+

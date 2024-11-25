@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url(fuentes/Oswald/Oswald-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(fuentes/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url(fuentes/Quicksand/Quicksand-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Header */
+
+header {
+    height: 102px;
+    background-color: #9BF2EA;
+}
+
+.nav-link {
+    font-family: 'Quicksand';
+    color: black;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.active { /* Sitio activo */
+    text-decoration: 4px underline #4B4B4B;
+}
+
+#nombreSitio {
+    font-family: 'Oswald';
+    color: black;
+    font-size: 32px;
+    line-height: 29px;
+}
+
+/* Formulario */
+
+#containerCuerpo {
+    height: 1064px;
+    padding: 20px;
+}
+
+#textoCreaTuCuenta {
+    color: #8979F2;
+    font-family: 'Roboto Mono';
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.form-label {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: #8979F2;
+}
+
+.form-control {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(5, 17, 242, 70%);
+    height: 51px;
+    border-radius: 15px;
+
+}
+
+.form-control::placeholder {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #0511F2;
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+.btn {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
+    border-radius: 15px;
+    background-color: #9BF2EA;
+    height: 62px;
+    width: 268px;
+}
+
+.btn:hover {
+    background-color: #5DABFF;
+}
+
+#botonTienesCuenta {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    color: #8979F2;
+}
+
+
+/* Footer */ 
+
+footer {
+    background-color: #5DABFF;
+    min-height: 197px;
+}
+
+#logoFooter{
+    margin-left: 75px;
+}
+
+#tituloFooter {
+    font-family: 'Roboto Mono';
+    color: white;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+#infoSeguinos {
+    margin-top: 15px;
+}
+
+#textoFooter {
+    font-family: 'Quicksand';
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#botonAyuda {
+    font-family: 'Quicksand';
+    color: #5DABFF;
+    font-size: 24px;
+    line-height: 30px;
+    height: 63px;
+    width: 160px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 767.98px) {
+
+    /* Header */
+
+    .nav-link {
+        font-family: 'Quicksand';
+        color: black;
+        font-size: 1.25rem; /* 20px */;
+        line-height: 30px;
+    }
+
+    .active { /* Sitio activo */
+        text-decoration: 4px underline #4B4B4B;
+    }
+
+    #nombreSitio {
+        font-size: 1.75rem;
+        line-height: 29px;
+    }
+
+    .navbar-toggler {
+        margin-top: 20px;
+        margin-left: 50px;
+        background-color: #030A8C;
+        color: #8979F2;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+      }
+      
+      .custom-toggler.navbar-toggler {
+        border-color: white;
+        border-width: 2px;
+      } 
+
+    #iconoIniciarSesion, #iconoCrearCuenta {
+        display: none;
+    }
+
+    .navbar-collapse {
+        background-color: #9BF2EA;
+    }
+
+    /* Formulario Hacer media queries para 576 px y md 700 px */
+
+    #textoCreaTuCuenta {
+        font-size: 25px;
+    }
+
+    #botonCreaTuCuenta {
+        height: 40px;
+        width: 225px;
+        background-color: #9BF2EA;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        text-align: center;
+        border-radius: 30px;
+    
+    }
+
+    #botonTienesCuenta {
+        font-size: 1.125rem;
+    }
+
+    .form-label {
+        font-size: 1.25rem;
+    }
+    
+    .form-control {
+        font-size: 1.25rem;
+        height: 51px;
+        border-radius: 15px;
+    
+    }
+    
+    .form-control::placeholder {
+        font-size: 1.25rem; /* 20px */
+    }
+    
+    .form-control:focus {
+        font-size: 1.25rem; /* 20px */
+    }
+    
+    .btn {
+        font-size: 1.25rem; /* 20px */
+        border-radius: 15px;
+        height: 62px;
+        width: 268px;
+    }
+
+    /* Footer */ 
+
+    footer {
+        background-color: #5DABFF;
+        min-height: 197px;
+    }
+
+    #logoFooter{
+        margin-left: 25px;
+    }
+
+    #tituloFooter {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    #infoSeguinos {
+        margin-top: 15px;
+    }
+
+    #textoFooter {
+        font-size: 1.125rem;
+        line-height: 25px;
+    }
+
+    .redesSociales {
+        display: flex;
+        justify-content: center;
+    }
+
+    #iconoRed {
+        height: 35px;
+        width: 35px;
+        margin-left: 15px;
+    }
+
+    #botonAyuda {
+        font-size: 1.25rem;
+        line-height: 30px;
+        height: 55px;
+        width: 125px;
+        border-radius: 10px;
+    }
+}

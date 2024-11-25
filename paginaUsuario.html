@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moneda X - Página de usuario</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylePU.css">
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <nav class="navbar navbar-expand-md" id="navbarHeader">
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="nombreSitio" href="index.html">
+                        <img src="img/LogoXHeader.png" alt="Logo de Moneda X" height="80px" width="80px">
+                        Moneda X
+                    </a>
+                    <div class="col-sm-4 col-md-4 col-lg-4 col-xl-3 col-xxl-3 d-flex align-items-center">
+                        <img src="img/iconos/Usuario.png" alt="Icono de Usuario Logeado" height="61px" width="61px">
+                        <div class="ms-3" id="nombreUsuario">Juan Ignacio</div>
+                    </div>
+                    
+                </div>
+            </nav>
+        </header>
+
+        <div class="container-fluid" id="seccionSaldo"> <!--Seccion saldo-->
+            <div class="row justify-content-around">
+                <div class="col-1 mt-4">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Mercado cambiario</button></li>
+                          <li><button class="dropdown-item" type="button">Inversiones</button></li>
+                          <li><button class="dropdown-item" type="button">Configuraci&oacute;n</button></li>
+                          <li><button class="dropdown-item" type="button">Cerrar Sesi&oacute;n</button></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-1 mt-4" id="textoPuntos">
+                    0 Puntos
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="container mt-5" id="containerSaldo">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-3" id="tituSaldoDisp">Saldo Disponible</div>
+                        </div>
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-3">
+                                <div>
+                                    <p class="saldo">&dollar; 0000,0000 ARS</p>
+                                    <p class="saldo">&dollar; 0000,0000 USD</p>
+                                    <p class="saldo">&dollar; 0000,0000 EUR</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-4 text-center">
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-3" id="botonIngresar"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalIngresar">Ingresar</button></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-3" id="botonIngresar"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalTransferir">Transferir</button></div>
+                            <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mb-3" id="botonIngresar"><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMovimientos">Movimientos</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <!--Modales-->
+
+            <!--Modal Ingresar-->
+
+            <div class="modal fade" id="modalIngresar" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresar dinero</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid textoModal">
+                                <div class="row justify-content-center mb-3">
+                                    <div class="col text-center" id="tituModal">Ingresar</div>
+                                </div>
+                                <div class="row justify-content-center mb-2">
+                                    <div class="col text-center">CBU: XXXXXXXXXXXXXXXXXXXXXX
+                                        <img src="img/iconos/Portapapeles.png" alt="icono de Portapapeles" height="25px" width="25px"> <!--Agregar enlace-->
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mb-3">
+                                    <div class="col text-center">
+                                        ALIAS: XXXXXXXXXXXXXXXXXXXXXX
+                                        <img src="img/iconos/Portapapeles.png" alt="icono de Portapapeles" height="25px" width="25px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            <!--Modal Transferir-->
+            <div class="modal fade" id="modalTransferir" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Transferir dinero</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            <div class="container-fluid textoModal" id="containerModalTransferir">
+                                <div class="row">
+                                    <div class="col text-center" id="tituModal">Transferir</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-3">
+                                        <div>
+                                            <p class="text-center">Saldo Disponible en ARS: &dollar; 0000,0000</p>
+                                            <p class="text-center">Saldo Disponible en USD: &dollar; 0000,0000</p>
+                                            <p class="text-center">Saldo Disponible en EUR: &dollar; 0000,0000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="container-fluid">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col">Destino</div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" id="inputDestino" placeholder="CBU">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="selectDivisa" class="form-label">Divisa</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <select class="form-select" id="selectDivisa">
+                                                            <option selected>Seleccionar</option>
+                                                            <option value="ARS">ARS</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="EUR">EUR</option>
+                                                          </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <label for="inputCantidad" class="form-label">Cantidad</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-2">
+                                                    <div class="col">
+                                                        <input type="number" class="form-control" id="inputCantidad" placeholder="&dollar; XXX">
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center mb-2">
+                                                    <div class="col text-center">
+                                                        <button type="submit" class="btn">Confirmar</button>
+                                                    </div>
+                                                </div>
+                                              </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Modal Movimientos-->
+
+            <div class="modal fade" id="modalMovimientos" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Movimientos de dinero</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid textoModal">
+                                <div class="row mb-3">
+                                    <div class="col text-center" id="tituModal">Movimientos</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">Fecha</div>
+                                    <div class="col">Divisa</div>
+                                    <div class="col">Destino</div>
+                                    <div class="col">Cantidad</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">XXXX</div>
+                                    <div class="col">ARS</div>
+                                    <div class="col">Lorem Ipsum</div>
+                                    <div class="col">&dollar; XXXX,XX</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">XXXX</div>
+                                    <div class="col">ARS</div>
+                                    <div class="col">Lorem Ipsum</div>
+                                    <div class="col">&dollar; XXXX,XX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid" id="seccionOperaciones"> <!--Seccion operaciones-->
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/CargarCelular.png" alt="Icono de Operacion Carga de Celular" height="150px" width="150px">
+                        <div class="mt-2">Cargar Celular</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/CargarTransportePU.png" alt="Icono de Operacion Cargar Transporte" height="150px" width="150px">
+                        <div class="mt-2">Cargar Transporte</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/IconoPagarServicios.png" alt="Icono de Operacion Pagar Servicios" height="150px" width="150px">
+                        <div class="mt-2">Pagar Servicios</div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/SolicitarPrestamo.png" alt="Icono de Operacion Solicitar Prestamo" height="150px" width="150px">
+                        <div class="mt-2">Solicitar Pr&eacute;stamo</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/CongelarDinero.png" alt="Icono de Operacion Congelar Dinero" height="150px" width="150px">
+                        <div class="mt-2">Congelar Dinero</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mb-4">
+                    <div class="operacion">
+                        <img id="iconoOperacion" src="img/iconos/CanjearPuntos.png" alt="Icono de Operacion Canjear Puntos" height="150px" width="150px">
+                        <div class="mt-2">Canjear Puntos</div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer>
+            <div class="container-fluid" id="containerInternoFooter">
+                <div class="position-relative">
+                    <div class="row g-0 justify-content-center align-items-center p-2">
+                        <div class="col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 position-absolute top-0 start-0 mt-3">
+                            <a href="#navbarHeader"><img id="logoFooter" src="img/LogoXFooter.png" alt="Logo Moneda X de Footer" height="60px" width="60px"></a>
+                        </div>
+                        <div class="col-sm-11 col-md-2 col-lg-3 offset-lg-3 col-xl-2 col-xxl-2 text-center">
+                            <div class="container-fluid" id="infoContacto"> <!--Info Contacto-->
+                                <div class="row mt-1 mb-3 align-items-center">
+                                    <div class="col-sm-12" id="tituloFooter">CONTACTO</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12" id="textoFooter">0800-971-0101</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-2 col-lg-3 col-xl-2 col-xxl-2">
+                            <div class="container-fluid" id="infoSeguinos"> <!--Info Seguinos, redes sociales-->
+                                <div class="row mb-3 align-items-center">
+                                    <div class="col text-center" id="tituloFooter">SEGUINOS</div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col">
+                                         <div class="redesSociales">
+                                            <img id="iconoRed" src="img/iconos/iconoFacebook.png" alt="icono de Facebook" height="47px" width="47px">
+                                            <img id="iconoRed" src="img/iconos/iconoInstagram.png" alt="icono de Instagram" height="47px" width="47px">
+                                            <img id="iconoRed" src="img/iconos/iconoXTwitter.png" alt="icono de X - Twitter" height="47px" width="47px">
+                                            <img id="iconoRed" src="img/iconos/iconoYoutube.png" alt="icono de Youtube" height="47px" width="47px">
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 offset-lg-1 col-xl-4 col-xxl-4 mt-3 text-center"> <!--Boton ayuda-->
+                            <div id="botonAyuda">
+                                <img src="img/iconos/iconoAyuda.png" alt="icono signo de Pregunta para Ayuda" height="40px" width="40px">
+                                Ayuda    
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="row mt-4 justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-3 text-center">
+                            <div class="copyRight" id="textoFooter">
+                                <img src="img/iconos/iconoCopyright.png" alt="icono de Copyright" height="30px" width="30px">
+                                2024 Moneda X. Todos los derechos reservados.
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
