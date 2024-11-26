@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Moneda X - Crear cuenta</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="styleCC.css">
+        <link rel="stylesheet" href="styleCC.css"> <!--Comparte el css de Crear Cuenta-->
     </head>
     <body>
         <!--Header-->
@@ -30,10 +30,10 @@
                                 <a class="nav-link" href="beneficios.html">Beneficios</a>
                             </li>
                             <li>
-                                <a class="nav-link d-md-none" href="iniciarSesion.html">Iniciar Sesi&oacute;n</a>
+                                <a class="nav-link d-md-none">Iniciar Sesi&oacute;n</a>
                             </li>
                         </ul>
-                        <a class="col-2" href="iniciarSesion.html" id="iconoIniciarSesion"><img src="img/iconos/IconoIniciarSesion.png" alt="Icono de Iniciar Sesion" height="60px" width="60px"></a>
+                        <a class="col-1 offset-1" href="crearCuenta.html" id="iconoCrearCuenta"><img src="img/iconos/IconoCrearCuenta.png" alt="Icono de Crear Cuenta" height="60px" width="60px"></a>
                     </div>
                 </div>
             </nav>
@@ -41,53 +41,40 @@
 
         <div class="container-fluid" id="containerCuerpo">
             <div class="row justify-content-center mt-5">
-                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" id="textoCreaTuCuenta">Crea tu cuenta en Moneda X</div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center" id="textoCreaTuCuenta">Iniciar sesi&oacute;n en Moneda X</div>
             </div>
             <div class="row mt-5">
                 <div class="col">
                     <div class="container-fluid" id="containerFormulario">
                         <form action="paginaUsuario.html">
-                            <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su Nombre">
+                            <div class="row mt-5 justify-content-center align-items-center">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
+                                    <label for="inputFechaNac" class="form-label">Ingrese su Email</label>
                                 </div>
                             </div>
                             <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese su Apellido">
+                                <div class="col-sm-9 col-md-6 col-lg-6 col-xl-6 text-center">
+                                    <input type="email" class="form-control" id="inputMail" placeholder="juanignacio@gmail.com">
                                 </div>
                             </div>
                             <div class="row mt-5 justify-content-center align-items-center">
-                                <div class="col-sm-6 col-md-2 col-lg-3 col-xl-3 text-center">
-                                    <label for="inputFechaNac" class="form-label">Ingrese su Fecha de Nacimiento</label>
-                                </div>
-                                <div class="col-sm-4 col-md-3 col-lg-3 col-xl-3 text-center">
-                                    <input type="date" class="form-control" id="inputFechaNac">
+                                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-& text-center">
+                                    <label for="inputFechaNac" class="form-label">Ingrese contrase&ntilde;a</label>
                                 </div>
                             </div>
                             <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <input type="email" class="form-control" id="inputMail" placeholder="Ingrese su Correo">
+                                <div class="col-sm-9 col-md-6 col-lg-6 col-xl-6 text-center">
+                                    <input type="password" class="form-control" id="inputContra" placeholder="************">
                                 </div>
                             </div>
                             <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <input type="password" class="form-control" id="inputContra" placeholder="Ingrese su Contrase&ntilde;a">
-                                </div>
-                            </div>
-                            <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <input type="password" class="form-control" id="inputRepContra" placeholder="Repita su Contrase&ntilde;a">
-                                </div>
-                            </div>
-                            <div class="row mt-5 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <button type="submit" class="btn mb-3" id="botonCreaTuCuenta">Crea tu Cuenta Ahora</button>
+                                <div class="col-sm-9 col-md-6 col-lg-6 col-xl-6 text-center">
+                                    <button type="submit" class="btn mb-3" id="botonCreaTuCuenta">Iniciar Sesi&oacute;n</button>
                                 </div>
                             </div>
                             <div class="row mt-4 justify-content-center">
-                                <div class="col-sm-9 col-md-5 col-lg-6 col-xl-6 text-center">
-                                    <a href="iniciarSesion.html" id="botonTienesCuenta">¿Ya tienes una cuenta?</a>
+                                <div class="col-sm-9 col-md-7 col-lg-7 col-xl-7 text-center">
+                                    <a href="crearCuenta.html" id="botonTienesCuenta">¿No tienes cuenta? Crear cuenta</a>
                                 </div>
                             </div>
                         </form>
